@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="My professional portfolio, experiences, achievements and personal library.">
+<title>My Personal Portfolio</title>
+
+<style>
+:root {
+  --bg: #101827;
+  --panel: #192538;
+  --blue: #93c5fd;
+  --white: #ffffff;
+  --muted: #bdc8d8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(16,24,39,.97);
+  padding: 18px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #344258;
+}
+
+.logo {
+  color: var(--blue);
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+nav a:hover {
+  color: var(--blue);
+}
+
+section {
+  padding: 85px 9%;
+  scroll-margin-top: 75px;
+}
+
+.hero {
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(circle at 85% 20%,
+    #254b7b 0%, transparent 35%),
+    var(--bg);
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.eyebrow {
+  color: var(--blue);
+  letter-spacing: 3px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: clamp(40px, 7vw, 75px);
+  line-height: 1.15;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 22px;
+}
+
+h3 {
+  color: var(--blue);
+  margin-bottom: 12px;
+}
+
+p {
+  color: var(--muted);
+  margin-bottom: 15px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--blue);
+  color: #101827;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 12px 10px 0 0;
+}
+
+.outline {
+  background: transparent;
+  color: white;
+  border: 1px solid var(--blue);
+}
+
+.section-label {
+  color: var(--blue);
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.alt {
+  background: #142033;
+}
+
+.content {
+  max-width: 850px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.card {
+  background: var(--panel);
+  padding: 25px;
+  border: 1px solid #344258;
+  border-radius: 9px;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+.tag {
+  display: inline-block;
+  color: var(--blue);
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+a {
+  color: var(--blue);
+}
+
+ul {
+  color: var(--muted);
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 9px;
+}
+
+footer {
+  padding: 35px 9%;
+  text-align: center;
+  background: #0b1220;
+  border-top: 1px solid #344258;
+}
+
+@media(max-width: 850px) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  section {
+    padding: 65px 7%;
+  }
+}
+
+@media(max-width: 480px) {
+  nav {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">MYNAME</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#diary">Work Diary</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#resume">Resume</a>
+    <a href="#library">My Library</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">WELCOME TO MY PERSONAL WEBSITE</div>
+
+    <h1>Hello, I'm<br>YOUR NAME.</h1>
+
+    <p>
+      A professional, a lifelong learner and a curious mind.
+      This is where I document my journey, experiences,
+      work, achievements and ideas.
+    </p>
+
+    <a href="#about" class="button">Discover My Story</a>
+    <a href="#resume" class="button outline">View Resume</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+  <div class="content">
+    <div class="section-label">01 / INTRODUCTION</div>
+    <h2>About Me</h2>
+
+    <p>
+      Welcome to my personal corner of the internet.
+      I believe in continuous learning, meaningful work,
+      creativity and personal growth.
+    </p>
+
+    <p>
+      Here you can learn about my background,
+      professional interests, personal journey
+      and the experiences that have shaped me.
+    </p>
+
+    <p>
+      Replace this text with your actual biography.
+    </p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+
+<section class="alt" id="experience">
+  <div class="content">
+    <div class="section-label">02 / MY JOURNEY</div>
+    <h2>Experience</h2>
+
+    <div class="cards">
+      <div class="card">
+        <span class="tag">2025 - PRESENT</span>
+        <h3>Job Title / Position</h3>
+        <p>Company or Organisation Name</p>
+        <p>Describe your responsibilities and experience here.</p>
+      </div>
+
+      <div class="card">
+        <span class="tag">2022 - 2025</span>
+        <h3>Previous Position</h3>
+        <p>Previous Company</p>
+        <p>Describe your previous work and achievements here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK DIARY -->
+
+<section id="diary">
+  <div class="content">
+    <div class="section-label">03 / DOCUMENTING MY WORK</div>
+    <h2>Work Diary</h2>
+
+    <p>
+      A collection of my projects, professional activities,
+      observations, experiences and lessons learned.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <span class="tag">PROJECT / ENTRY 01</span>
+        <h3>Project Title</h3>
+        <p>Describe the project, what you did and what you learned.</p>
+      </div>
+
+      <div class="card">
+        <span class="tag">PROJECT / ENTRY 02</span>
+        <h3>Another Experience</h3>
+        <p>Document another important experience here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+
+<section class="alt" id="certifications">
+  <div class="content">
+    <div class="section-label">04 / RECOGNITION</div>
+    <h2>Certifications & Achievements</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Certification Name</h3>
+        <p>Issuing organisation</p>
+        <p>Year: 2026</p>
+      </div>
+
+      <div class="card">
+        <h3>Award / Achievement</h3>
+        <p>Describe your achievement here.</p>
+        <p>Year: 2026</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESUME -->
+
+<section id="resume">
+  <div class="content">
+    <div class="section-label">05 / PROFESSIONAL PROFILE</div>
+    <h2>My Resume</h2>
+
+    <p>
+      Explore my professional qualifications,
+      career experience, skills and education.
+    </p>
+
+    <a href="resume.pdf" class="button" target="_blank">
+      View My Resume
+    </a>
+
+    <a href="resume.pdf" class="button outline" download>
+      Download Resume
+    </a>
+
+    <p style="font-size:13px; margin-top:20px">
+      Upload your PDF resume to this repository
+      and name it exactly resume.pdf.
+    </p>
+  </div>
+</section>
+
+<!-- LIBRARY -->
+
+<section class="alt" id="library">
+  <div class="content">
+    <div class="section-label">06 / KNOWLEDGE & LEARNING</div>
+    <h2>My Library</h2>
+
+    <p>
+      Books, articles, research, ideas and resources
+      that inspire me and contribute to my learning.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Books</h3>
+        <p>My favourite books and reading list.</p>
+      </div>
+
+      <div class="card">
+        <h3>Articles</h3>
+        <p>Interesting articles and useful reading material.</p>
+      </div>
+
+      <div class="card">
+        <h3>Resources</h3>
+        <p>Useful websites, tools and learning resources.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+  <div class="content">
+    <div class="section-label">07 / GET IN TOUCH</div>
+    <h2>Contact Me</h2>
+
+    <p>
+      Have a question, an idea or an opportunity?
+      I would be happy to connect.
+    </p>
+
+    <p>
+      Email:
+      <a href="mailto:you@example.com">
+        you@example.com
+      </a>
+    </p>
+
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/" target="_blank">
+        My LinkedIn Profile
+      </a>
+    </p>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 YOUR NAME | Personal Portfolio</p>
+  <p>Built with curiosity and passion.</p>
+</footer>
+
+</body>
+</html>
